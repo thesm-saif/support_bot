@@ -14,11 +14,11 @@ intents.reactions = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ===== CONFIG =====
-SUPPORT_ROLE_NAME = "Support Crew"              # CHANGE IF NEEDED
-SUPPORT_ROLE_ID = 1463147930360746086           # CHANGE THIS
-SUPPORT_GUILD_ID = 1462547101442506754          # CHANGE THIS
-SUPPORT_CHANNEL_ID = 1463587424511988006        # CHANGE THIS
-SERVER_NAME = "Saudia Virtual"                  # CHANGE THIS
+SUPPORT_ROLE_NAME = "#Update Your Role Here"              # CHANGE IF NEEDED
+SUPPORT_ROLE_ID = #Include The Role ID            # CHANGE THIS
+SUPPORT_GUILD_ID = #Include the Guild ID          # CHANGE THIS
+SUPPORT_CHANNEL_ID = #Include the Channe; ID        # CHANGE THIS
+SERVER_NAME = "#NAme of the Server Please"                  # CHANGE THIS
 # ==================
 
 tickets = {}   # user_id -> thread_id
@@ -233,4 +233,5 @@ async def close(interaction: discord.Interaction):
     await interaction.channel.delete()
 
 # ===== RUN =====
-bot.run("MTQ2MzU4NzExNjUyMzk3ODc1Mw.GoEIJo.s3znwFDoyMdjIuy8OOy7NUKoPVIa32hP18fpVc")
+bot.run("Your Bot ID HEere")
+
