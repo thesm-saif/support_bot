@@ -14,18 +14,18 @@ intents.reactions = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # ===== CONFIG =====
-SUPPORT_ROLE_NAME = "#Update Your Role Here"              # CHANGE IF NEEDED
-SUPPORT_ROLE_ID = #Include The Role ID            # CHANGE THIS
-SUPPORT_GUILD_ID = #Include the Guild ID          # CHANGE THIS
-SUPPORT_CHANNEL_ID = #Include the Channe; ID        # CHANGE THIS
-SERVER_NAME = "#NAme of the Server Please"                  # CHANGE THIS
+SUPPORT_ROLE_NAME = "#Update Your Role Here"              # CHANGE THE ROLE TO THE ROLE FOR SUPPORT
+SUPPORT_ROLE_ID = #PASTE THE ROLE ID HERE                 # CHANGE THIS
+SUPPORT_GUILD_ID = #Include the Guild ID                  # CHANGE THIS
+SUPPORT_CHANNEL_ID = #Include the Channe; ID              # CHANGE THIS
+SERVER_NAME = "#NAme of the Server Please"                # CHANGE THIS
 # ==================
 
 tickets = {}   # user_id -> thread_id
 claimed = {}   # thread_id -> (staff_name, staff_role)
 
 
-# ===== READY =====
+# ===== BOT READY =====
 @bot.event
 async def on_ready():
     guild = discord.Object(id=SUPPORT_GUILD_ID)
@@ -233,5 +233,9 @@ async def close(interaction: discord.Interaction):
     await interaction.channel.delete()
 
 # ===== RUN =====
-bot.run("Your Bot ID HEere")
+bot.run("Your Bot ID HEere")    #CHANGE THIS 
+
+#END OF CODE
+#THANKS FOR USING THE BOT !!! 
+
 
